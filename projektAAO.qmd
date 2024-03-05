@@ -1,0 +1,42 @@
+---
+title: "Projekt AAO"
+author: Weronika Nadworska
+format: 
+  html:
+    warning: false
+    message: false
+    self-contained: true
+    self-contained-math: true
+    embed-resources: true
+    lang: pol
+editor: visual
+toc: true
+editor: visual
+---
+
+```{r echo=FALSE}
+library(tidyverse)
+library(keras)
+```
+
+## Cel projektu
+
+Uczenie maszynowe ma szerokie zastosowanie w analizowaniu obrazów. Modele sieci neuronowych umożliwiają wiele zadań, które można wykonywać na obrazach oraz są stosowane w różnych dziedzinach. Przykładowe ich zastosowania to medycyna, gdzie modele te są wykorzystywane do wykrywania np. zmian nowotworowych bądź innych zmian w róznego rodzaju prześwietleniach. Uczenie maszynowe ma także szerokie zastosowanie przez policję oraz inne służby, np. podczas rozpoznawania przestępców na materiałach z kamer miejskich oraz tablic rejestracyjnych pojazdów.
+
+Celem tego projektu jest zbudowanie optymalnej sieci neuronowej, która będzie klasyfikowała obrazy przedstawiające przekąski do odpowiednich kategorii przekąsek.
+
+## Opis zbioru badawczego
+
+Dane pochodzą ze strony [huggingface.co](https://huggingface.co/datasets/Matthijs/snacks). Zawierają dane
+
+Poniżej przedstawiono kilkanaście losowych obrazów tego zbioru.
+
+```{r fig.align="center", echo=FALSE}
+knitr::include_graphics("C:\\Users\\wnadw\\Desktop\\Pliki studia\\Rok 3\\semestr 2\\Automatyczna analiza obarzu\\przyklady.jpg")
+```
+
+Dane składają się z 27 kolumn oraz 1941 obserwacji.
+
+Opis zmiennych:
+
+`x_minimum` - jeden z wymiarów płyty na osi $x$
